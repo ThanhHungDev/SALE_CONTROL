@@ -123,6 +123,7 @@ $btn-disabled-opacity: .65 !default;
 }
 
 
+
 //// define grid min of device
 $MIN_XSM: 375px;   /// <  425px => medium mobile
 $MIN_XS : 425px;   /// <  576px => larger mobile
@@ -132,6 +133,8 @@ $MIN_LG : 992px;   /// 992px ----> 1199px
 $MIN_XL : 1200px;  /// 1200px - 1320px
 $MIN_XXL: 1320px;  /// 1320px - 1400px
 
+//// là phần từ nhỏ đến lớn, nghĩa là khi code 1 css bất kì mặc định => nó là mobile đến PC, 
+/// nếu có gọi @include vào thì nó sẽ chuyển từ mobile đi PC ví dụ cụ thể là fix màn hình MD trở lên @include Screen(MD)
 @mixin Screen($canvas) {
   @if $canvas == XSM {
     @media (min-width:$MIN_XSM)  { @content; } 
@@ -150,4 +153,42 @@ $MIN_XXL: 1320px;  /// 1320px - 1400px
   }@else if(is-number($canvas)){
     @media (min-width:$canvas)  { @content; }
   }
+}
+
+
+
+//// define grid min of device
+$MAX_XSM: 425px;   /// <  425px => medium mobile
+$MAX_XS : 576px;   /// <  576px => larger mobile
+$MAX_SM : 768px;   // 576px -> 768px
+$MAX_MD : 991px;   /// 768px -> 991px
+$MAX_LG : 1199px;   /// 992px ----> 1199px
+$MAX_XL : 1320px;  /// 1200px - 1320px
+$MAX_XXL: 1400px;  /// 1320px - 1400px
+
+@mixin ScreenMax($canvas) {
+  @if $canvas == XSM {
+    @media (max-width: $MAX_XSM)  { @content; } 
+  }@else if $canvas == XS {
+    @media (max-width: $MAX_XS)  { @content; } 
+  }@else if $canvas == SM {
+    @media (max-width: $MAX_SM) { @content; } 
+  }@else if $canvas == MD {
+    @media (max-width: $MAX_MD) { @content; } 
+  }@else if $canvas == LG {
+    @media (max-width: $MAX_LG) { @content; } 
+  }@else if $canvas == XL {
+    @media (max-width: $MAX_XL) { @content; } 
+  }@else if $canvas == XXL {
+    @media (max-width: $MAX_XXL)  { @content; }
+  }@else if(is-number($canvas)){
+    @media (max-width: #{$canvas}px)  { @content; }
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
 }

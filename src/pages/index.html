@@ -2,16 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Đây là trang chủ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- thay đường dẫn vì bây giờ nó sẽ chạy đường dẫn gốc là dist -->
     <link rel="stylesheet" href="/css/app.css">
-    <script src="/js/app.js"></script>
+    <title>Document</title>
 </head>
 <body>
     @@include('../partial/header.html')
-    <div>
-        đây là phần nội dung file index nè nè nè sdfdsf
+    <div class="homepage">
+        <div class="brand">
+            <div class="brand__top">
+                <img class="brand--image" src="/img/brand.png" alt="brand management partners" width="138" height="48" />
+                <h2 class="brand--text">「MPS」</h2>
+            </div>
+            <h3 class="brand__bottom">社内情報の一括管理で大幅コストカット実現！！            </h3>
+        </div>
+        <div class="bg__fullscreen-homepage">
+            <img class="bg__fullscreen--image" src="/img/background-homepage.png" alt="full screen background management partners" />
+        </div>
+        <div class="intro">
+            <div class="intro__title">
+                <img class="intro__title--image" src="/img/upload -cloud.png" alt="" />
+                <p class="intro__title--text">サービスの特徴</p>
+            </div>
+            <div class="intro__list--wrapper">
+                <ul class="intro__list">
+                    <li class="intro__item">
+                        
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            01.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            社内の情報共有もバッチリ！
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            02.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            ワークフロー機能で業務スピードＵＰ！！
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            03.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            従業員情報一括管理で便利な機能も！！
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            04.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            社員同士のスマートな情報共有を実現！
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            05.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            シフト・勤怠管理をクラウド化しませんか？
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            06.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            スプレッドシート機能で簡単分析！！
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            07.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            給与明細機能でペーパーレス化！！
+                        </a>
+                    </li>
+    
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            08.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            年末調整をクラウド上で一括配布・回収！！
+                        </a>
+                    </li>
+    
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            09.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            ストレスチェック機能で簡単実施！
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            10.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            クラウドサインで業務効率UP
+                        </a>
+                    </li>
+                    <li class="intro__item">
+                        <span class="intro__item-image">
+                            <img src="/img/infor-list-style.png" alt="" />
+                        </span>
+                        <span class="intro__item-number">
+                            11.
+                        </span>
+                        <a class="intro__item-link" href="#">
+                            請求書送付機能で月末月初の事務作業に大革命♪
+                        </a>
+                    </li>
+                </ul>
+                <div class="intro__bg-right">
+                    <img src="/img/right-image-list-style.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+        <div class="trouble">
+            <div class="trouble__title">
+                <p class="trouble__title--text">お困りではございませんか？                    </p>
+            </div>
+            <div class="content">
+                <div class="content__left">
+                    <div class="content__group">
+                        <input type="checkbox" id="checkbox1" name="checkbox1" />
+                        <label for="checkbox1">社内で利用しているがツールがバラバラで情報もあちこちに
+                            あり <a href="">整理ができてない</a>
+                            </label>
+                    </div>
+                    <div class="content__group">
+                        <input type="checkbox" id="checkbox2" name="checkbox2" />
+                        <label for="checkbox2">従業員のタスクが<a href="">可視化できていない</a>ので、プロジェクトが
+                            円滑に進まない                            
+                            </label>
+                    </div>
+                    <div class="content__group">
+                        <input type="checkbox" id="checkbox3" name="checkbox3" />
+                        <label for="checkbox3">同じような書類が沢山あり、<a href="">同じ情報を転記する</a>入力業務が
+                            多く発生している </label>
+                    </div>
+                    <div class="content__group">
+                        <input type="checkbox" id="checkbox4" name="checkbox4" />
+                        <label for="checkbox4">会議で使う<a href="">資料を見つけ出す</a>のに手間が掛かる</label>
+                    </div>
+                </div>
+                <div class="content__right">
+                    <img src="/img/image-trouble.png" alt="" class="content__right--image">
+                </div>
+            </div>
+        </div>
+
+        <div class="hr__blue">
+            「MPS」を導入で、業務の『ムダ』を大幅削減！！
+        </div>
+        <div class="solve">
+            <div class="solve__left">
+                <div class="solve__title">
+                    <img class="solve__title--image" src="/img/upload -cloud.png" alt="" />
+                    <p class="solve__title--text">お悩み解決！！</p>
+                </div>
+                <div class="solve__content">
+                    <ul class="solve__list">
+                        <li class="solve__item">
+                            <span class="solve__item-number">
+                                01.
+                            </span>
+                            <span class="solve__item-link">
+                                情報共有にかかる時間やコストの大幅軽減！！
+                            </span>
+                        </li>
+                        <li class="solve__item">
+                            <span class="solve__item-number">
+                                02.
+                            </span>
+                            <span class="solve__item-link">
+                                さまざまな働き方を実現！！
+                            </span>
+                        </li>
+                        <li class="solve__item">
+                            <span class="solve__item-number">
+                                03.
+                            </span>
+                            <span class="solve__item-link">
+                                電子決裁機能導入で業務スピードＵＰ！！
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solve__right">
+                <img class="solve__right--image" src="/img/image-chart.png" alt="" />
+            </div>
+        </div>
     </div>
     @@include('../partial/footer.html')
 </body>
 </html>
+
