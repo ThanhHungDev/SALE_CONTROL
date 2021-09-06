@@ -17,7 +17,7 @@ gulp.task('sass', function () {
         .pipe(autoprefixer({
             overrideBrowserslist: ['> 1%']
         }))
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(gulp.dest(path.join(__dirname, 'dist/css'))) /// tạo mới folder
         .pipe(browserSync.stream({ match: '**/*.css' })) /// xem stream nó khác reload như nào nhé!!!
 });
