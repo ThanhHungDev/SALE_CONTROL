@@ -23,6 +23,7 @@ $text__color: #2fbff3;
     font-family: 'M PLUS 1p', sans-serif;
     max-width: 1100px;
     margin: 0 auto;
+    text-align: left;
     
     img{
         width: 100%;
@@ -280,6 +281,7 @@ $text__color: #2fbff3;
         }
     }
     .solve{
+        text-align: left;
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
@@ -768,8 +770,8 @@ $text__color: #2fbff3;
                         }
                         .mid1{
                             position: absolute;
-                            left: 20%;
-                            top: -15px;
+                            left: 0;
+                            top: -18px;
                         }
                         .mid2{
                             position: absolute;
@@ -778,7 +780,7 @@ $text__color: #2fbff3;
                         }
                         .mid3{
                             position: absolute;
-                            left: 80%;
+                            left:90%;
                             top: -15px;
                             bottom: unset;
                         }
@@ -820,6 +822,140 @@ $text__color: #2fbff3;
             }
         }
 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .groupware{
+        text-align: left;
+        padding: 30px;
+        @include ScreenMax(SM){
+            padding: 0;
+        }
+        &__title{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 0 20px;
+
+            &--image{
+                width: initial;
+                height: auto;
+            }
+            &--text{
+                color: #3f3f3f;
+                font-weight: 900;
+                margin: 0;
+                padding: 0 10px;
+                font-size: 20px;
+            }
+        }
+
+
+        &__des{
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0 0 20px;
+            &-bottom{
+                font-size: 18px;
+                font-weight: 500;
+                padding: 0 0 20px;
+                line-height: 1.4;
+            }
+        }
+        
+        &__wrapper{
+            padding: 40px;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: row-reverse;
+
+            &-img{
+                flex: 1;
+            }
+            &-main{
+                flex: 1;
+            }
+            .listgroup{
+                
+                padding-right: 15px;
+                &__item{
+                    &-title{
+                        
+                        color: white;
+                        padding: 10px 15px 10px 0;
+                        position: relative;
+                        font-size: 16px;
+                        font-weight: 500;
+                        &:after{
+                            background-color: #00b0f0;
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: -80px;
+                            right: 40px;
+                            bottom: 0;
+                            z-index: -1;
+                        }
+                    }
+                    &-content{
+                        padding: 10px 0 15px 20px;
+                        margin: 0;
+                        list-style-type:decimal;
+                        &>li{
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 1.4;
+                            ol{
+                                padding: 0 0 10px 20px;
+                                font-size: 14px;
+                                list-style-type: square;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        @include ScreenMax(SM){
+            &__content{
+                flex-direction: column;
+                .listgroup{
+                    padding: 0;
+                    &__item{
+                        &-title{
+                            padding: 10px 15px;
+                            &:after{
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                        &-content{
+                            padding: 10px 20px 15px 20px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+            &__wrapper{
+                padding: 0;
+            }
+            
+        }
+        
     }
 }
 

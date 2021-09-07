@@ -93,13 +93,13 @@
       arrowFw.classList.remove('arrow-bw');
       arrowFw.classList.add('arrow-fw');
       arrowFw.style.borderRightColor = color;
-      arrowFw.style.top = W/2-6 + "px";
+      arrowFw.style.top = W/2-7 + "px";
     }
     if (arrowBw) {
       arrowBw.classList.remove('arrow-fw');
       arrowBw.classList.add('arrow-bw');
       arrowBw.style.borderLeftColor = color;
-      arrowBw.style.top = W/2-6 + "px";
+      arrowBw.style.top = W/2-5 + "px";
     }
     line.style.display = "none";
     line.style["-webkit-transform"] = 'rotate('+ ANG +'deg)';
