@@ -22,10 +22,20 @@
 <script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/jquery.js?ver=1630902907'></script>
 
 
-<script type='text/javascript' src='/js/domarrow.js'></script>
+
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/drawr.js?ver=1631167532'></script>
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/fadein.js?ver=1631167532'></script>
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/smoothscroll.js?ver=1631167532'></script>
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/scrollNav.js?ver=1631167532'></script>
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/pagetop.js?ver=1631167532'></script>
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/tel.js?ver=1631167532'></script>
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-content/themes/management-partners/js/domarrow.js?ver=1631167532'></script>
+<script src="https://cdn.jsdelivr.net/npm/arrow-line/dist/arrow-line.min.js"></script>
+
+<script type='text/javascript' src='http://test.management-partners.co.jp/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
 
     <link rel="stylesheet" href="/css/app.css">
-    <title>Document</title>
+    <title>Document hùng</title>
 </head>
 <body>
     <!-- <header>
@@ -302,8 +312,7 @@
         </div>
     </div>
 </div>
-    
-<div class="contentin t_center">
+    <div class="bg_gray fadein">
     <div class="content ">
         <div class="homepage">
             <div class="centralized">
@@ -314,23 +323,21 @@
                 </div>
                 <div class="content">
                     <div class="content__group">
-                        <input type="checkbox" id="checkbox1" name="checkbox1">
+                        <input type="checkbox" id="checkbox1" name="checkbox1" disabled="disabled">
                         <label for="checkbox1">
                             社内の情報管理を「紙」や「バラバラのフォーマットデータ」で管理していませんか？
                         </label>
                     </div>
                     <div class="content__group">
-                        <input type="checkbox" id="checkbox2" name="checkbox2">
-                        <label for="checkbox2">
+                        <input type="checkbox" id="checkbox2" name="checkbox2" disabled="disabled">
+                        <label for="checkbox2" disabled="disabled">
                             同じ様なリストデータが増えていませんか？
                         </label>
                     </div>
                 </div>
                 <div class="content group">
                     <div class="group__left">
-                        <img class="centralized__title--image"
-                            src="/img/staff-group.png"
-                            alt="" />
+                        <img class="centralized__title--image" src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/staff-group.png" alt="">
 
                     </div>
                     <div class="group__center">
@@ -347,31 +354,32 @@
                         </div>
                         <div class="group__center-file">
                             <div class="file" id="d1">
-                                <img src="/img/file.png" alt="">
+                                <img src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/file.png" alt="">
                                 <span>
                                     入社書類
                                 </span>
                                 <span id="file1" class="file1"></span>
                             </div>
                             <div class="file">
-                                <img src="/img/file.png" alt="">
+                                <img src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/file.png" alt="">
                                 <span>
                                     従業員スケジュール 従業員情報
                                 </span>
                                 <span id="file2" class="file2"></span>
                             </div>
                             <div class="file">
-                                <img src="/img/file.png" alt="">
+                                <img src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/file.png" alt="">
                                 <span>
                                     決裁文書
                                 </span>
                                 <span id="file3" class="file3"></span>
                             </div>
+
                         </div>
                         <div class="group__center-mid">
                             <div class="mid">
                                 <div class="wrapper">
-                                    <img src="/img/center-mid.png" alt="">
+                                    <img src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/center-mid.png" alt="">
                                     <span id="mid1" class="mid1"></span>
                                     <span id="mid2" class="mid2"></span>
                                     <span id="mid3" class="mid3"></span>
@@ -384,15 +392,16 @@
                             </div>
                             <div class="final">
                                 <div class="wrapper">
-                                    <img src="/img/final.png" alt="">
+                                    <img src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/final.png" alt="">
                                     <span id="mid1" class="mid1"></span>
                                     <span id="mid2" class="mid2"></span>
                                     <span id="mid3" class="mid3"></span>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    
+
                 </div>
 
                 <div class="content ">
@@ -404,7 +413,7 @@
                                 </span>
                                 <span class="centralized__item-link">
                                     一つのデータを
-                                    <a href="#">各セクションで共有</a>
+                                    <span href="javascript:void(0)">各セクションで共有</a>
                                     し、情報を引き出し、観覧・編集が可能です。
                                 </span>
                             </li>
@@ -421,14 +430,15 @@
                                     03.
                                 </span>
                                 <span class="centralized__item-link">
-                                    <a href="#">大幅なコスト、時間の削減が可能</a>
-                                    です。
+																	<span style="color:#2fbff3;">大幅なコスト、時間の削減が可能<span>
+                                   です。
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -436,27 +446,22 @@
 <connection from="#file2" to="#mid2" color="#495057" tail></connection>
 <connection from="#file3" to="#mid3" color="#495057" tail></connection>
 
-    
-<div class="contentin t_center">
+    <div class="contentin fadein">
     <div class="content">
         <div class="homepage">
             <div class="groupware">
                 <div class="groupware__wrapper">
                     <div class="groupware__title">
-                        <img class="groupware__title--image"
-                            src="/img/groupware.png"
-                            alt="">
+                        <img class="groupware__title--image" src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/groupware.png" alt="">
                         <p class="groupware__title--text">「グループウェア」とは？</p>
                     </div>
                     <p class="groupware__des">
-                        社内の情報共有やコミュニケーションを促進し、業務効率を高めるためのシステムです。<br />
+                        社内の情報共有やコミュニケーションを促進し、業務効率を高めるためのシステムです。<br>
                             グループウェアを導入して、社内の情報共有を活発に！
                     </p>
                     <div class="groupware__content">
                         <div class="groupware__content-img">
-                            <img class="groupware__title--image"
-                            src="/img/groupware-img.png"
-                            alt="">
+                            <img class="groupware__title--image" src="http://test.management-partners.co.jp/wp-content/uploads/sites/22/2021/09/groupware-img.png" alt="">
                         </div>
                         <div class="groupware__content-main">
                             <div class="listgroup">
@@ -468,7 +473,7 @@
                                         <li>スケジュール</li>
                                         <li>設備・会議室の予約</li>
                                         <li>プロジェクト</li>
-                                        <li>社内知識・イベント </li>                                   
+                                        <li>社内知識・イベント </li>
                                     </ul>
                                 </div>
                                 <div class="listgroup__item">
@@ -491,7 +496,7 @@
                                                 <li>移動費</li>
                                                 <li>紙代、インク代、郵送代　　　　　　etc…</li>
                                             </ol>
-                                        </li>                                  
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="listgroup__item">
@@ -504,20 +509,19 @@
                                     </ul>
                                 </div>
                             </div>
-    
-    
+
+
                         </div>
                     </div>
                 </div>
                 <p class="groupware__des-bottom">
-                    多くの機能があるため、必要な機能を自由に選んで使えるのがMPSの強みです。<br />
+                    多くの機能があるため、必要な機能を自由に選んで使えるのがMPSの強みです。<br>
                     社内での情報共有を活発にして、コスト削減、企業の利益を高めたい方は、MPSを導入してみてはいかがでしょうか？
                 </p>
             </div>
         </div>
     </div>
 </div>
-
     <!-- <footer>
     đây là footerdfgfdg sdf dsdfs sdf s
 </footer> -->

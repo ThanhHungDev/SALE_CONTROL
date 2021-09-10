@@ -192,6 +192,12 @@
     [...document.body.getElementsByTagName('connection')].forEach(createOne);
   }
 
+
+  window.myCreate= function() {
+    bodyObserver.observe(document.body, {childList:true, subtree: true});
+    [...document.body.getElementsByTagName('connection')].forEach(createOne);
+  }
+
   function removeConnection(tag) {
     for(var i = connectionElements.length - 1; i >= 0; i--)
       if(connectionElements[i] === tag)
@@ -254,12 +260,10 @@
   var bodyObserver = new MutationObserver(bodyNewElement);
   var connectionObserver = new MutationObserver(changedConnectionTag);
   var connectedObserver = new MutationObserver(changedConnectedTag);
-  document.body && create() || window.addEventListener("load", create);
+  // document.body && create() || window.addEventListener("load", create);
 
 
-  window.addEventListener('resize', function(event) {
-    document.body && create() || window.addEventListener("load", create);
-  }, true);
+  // window.addEventListener('resize', function(event) {
+  //   document.body && create() || window.addEventListener("load", create);
+  // }, true);
 })();
-
-
