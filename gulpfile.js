@@ -54,4 +54,5 @@ gulp.task('watch', function () {
     gulp.watch("src/javascript/**.js", gulp.series('js')).on("change", browserSync.reload)
     /// cấu hình cho scss
     gulp.watch("src/scss/**.scss", gulp.series('sass'))
+    gulp.watch("src/scss/partial/**.scss", gulp.series('sass'))
 });
