@@ -50,6 +50,16 @@
         }
         .legend{
             border: 2px solid $gray-300;
+
+            &__content{
+                display: flex;
+                flex-direction: row;
+
+                &>div{
+                    flex: 1;
+                    padding: 30px;
+                }
+            }
         }
     }
 }
