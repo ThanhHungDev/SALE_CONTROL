@@ -22,7 +22,7 @@ $text__color: #2fbff3;
         width: 100%;
         height: auto;
     }
-}
+} 
 
 @import "./partial/connection.scss";
 @import "./partial/groupware.scss";
@@ -33,3 +33,4 @@ $text__color: #2fbff3;
 @import "./partial/solve.scss";
 @import "./partial/sharing.scss";
 @import "./partial/workflow.scss";
+@import "./partial/formformat.scss";
