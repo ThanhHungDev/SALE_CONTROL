@@ -30,16 +30,16 @@ connection .line {
         border-right: 12px solid black;
     }
 }
-.fadein {
-	opacity : 0;
-	transform : translate(0, 50px);
-	transition : all 1s;
-    .active{
-        opacity : 1;
-        transform : translate(0, 0);
-        position: relative;
-    }
-    .line{
-        transform : translate(0, 50px);
-    }
-}
+// .fadein {
+// 	opacity : 0;
+// 	transform : translate(0, 50px);
+// 	transition : all 1s;
+//     .active{
+//         opacity : 1;
+//         transform : translate(0, 0);
+//         position: relative;
+//     }
+//     .line{
+//         transform : translate(0, 50px);
+//     }
+// }
