@@ -1,5 +1,5 @@
 .homepage{
-    .infosharing{
+    .analysis{
         &__head{
             
             padding: 15px 30px;
@@ -17,31 +17,6 @@
                 margin: 0;
                 padding: 0 10px 0 30px;
                 font-size: 16px;
-            }
-        }
-        &__title{
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: row;
-            align-items: center;
-            padding: 20px 0;
-
-            &--image{
-                width: initial;
-                height: auto;
-            }
-            &--text{
-                color: #00b0f0;
-                font-weight: 900;
-                margin: 0;
-                padding: 0;
-                font-size: 16px;
-                padding-left: 10px;
-            }
-        }
-        .item{
-            &__content--data{
-                padding-left: 30px;
             }
         }
         .content__group{
@@ -66,21 +41,51 @@
                 }
             }
         }
-        .content{
+
+        .wrapper{
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            .item_right{
-                flex-grow: 999;
+            padding: 30px 15px 15px;
+
+            @include ScreenMax( SM ){
+                flex-direction: column;
+                // .image__left, .image__right{
+                //     display: flex;
+                //     flex-direction: column;
+                // }
                 text-align: center;
+                img{
+                    width: unset;
+                    height: auto;
+                }
+                .image__right{
+                    padding-top: 30px;
+                }
+            }
+            
+            &.center{
+                align-items: center;
             }
 
-            @include ScreenMax( SM ){ 
-                flex-direction: column;
-                .item_right{
-                    text-align: center;
-                    padding: 20px 0;
+            &__right{
+                flex-grow: 999;
+                text-align: center;
+                img{
+                    height: 100%;
+                    width: auto;
                 }
+            }
+            .btn__spreadsheet{
+                background-color: transparent;
+                border-radius: 50px;
+                font-size: 10px;
+                outline: none;
+                color: white;
+                background-color: #00b0f0;
+                border: 1px solid #00b0f0;
+                line-height: 2;
+                padding: 0 1.8rem 0.1rem;
+                margin-bottom: 15px;
             }
         }
     }
