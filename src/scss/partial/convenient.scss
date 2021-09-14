@@ -19,6 +19,11 @@
                 font-size: 16px;
             }
         }
+        &__bot{
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
         &__title{
             display: flex;
             justify-content: flex-start;
@@ -36,6 +41,7 @@
                 margin: 0;
                 padding: 0;
                 font-size: 16px;
+                padding-left: 10px;
             }
         }
 
@@ -102,10 +108,24 @@
             &__right{
                 max-width: 250px;
             }
+            @include ScreenMax( SM ){
+                flex-direction: column;
+                &__left{
+                    padding-right: 0;
+                }
+                &__right{
+                    margin: 0 auto;
+                    padding-top: 30px;
+                }
+            }
+            @include ScreenMax( SM ){
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
 
         .legend{
-            border-radius: 4px;
+            border-radius: 10px;
             border: 2px solid $gray-300;
             padding: 60px 30px;
             margin-top: 30px;
