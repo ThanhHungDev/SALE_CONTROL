@@ -28,11 +28,11 @@
 
         &__des{
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600; /// edit font 500 to 600 
             padding: 0 0 20px;
             &-bottom{
                 font-size: 18px;
-                font-weight: 500;
+                font-weight: 600; /// edit font 500 to 600 
                 padding: 0 0 20px;
                 line-height: 1.4;
             }
@@ -62,7 +62,7 @@
                         padding: 10px 15px 10px 0;
                         position: relative;
                         font-size: 16px;
-                        font-weight: 500;
+                        font-weight: 600; /// edit font 500 to 600 
                         &:after{
                             background-color: #00b0f0;
                             content: "";
@@ -80,7 +80,7 @@
                         list-style-type:decimal;
                         &>li{
                             font-size: 15px;
-                            font-weight: 500;
+                            font-weight: 600; /// edit font 500 to 600 
                             line-height: 1.4;
                             ol{
                                 padding: 0 0 10px 20px;
