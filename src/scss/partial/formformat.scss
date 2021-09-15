@@ -1,7 +1,7 @@
 .formformat{
     .groupware{
+        padding: 0;
         .wrapper{
-            padding: 40px;
             .top{
                 .title{
                     display: flex;
@@ -40,6 +40,7 @@
                     border: 2px dashed #049AE6;
                     .card-top{
                         .top-title{
+                            padding: 0;
                             font-size: 18px;
                             font-weight: bold;
                             color: #049AE6;
@@ -82,13 +83,32 @@
                     }
                 }
             }
-            @include ScreenMax(SM){
+        }
+        @include ScreenMax(SM){
+            .wrapper{
+                padding: 0;
                 .content-body{
                     flex-direction: column;
                     .item-card{
                         box-sizing: border-box;
                         margin-bottom: 25px;
                         width: 100%;
+                    }
+                }
+            }
+        }
+        @include ScreenMax(XS){
+            .wrapper{
+                .content-body{
+                    padding: 0;
+                }
+            }
+        }
+        @include ScreenMax(XSM){
+            .wrapper{
+                .content-body{
+                    .item-card{
+                        padding: 10px;
                     }
                 }
             }
