@@ -1,5 +1,5 @@
 .homepage{
-    .paperless{
+    .distribute{
         &__head{
             
             padding: 15px 30px;
@@ -41,6 +41,15 @@
             }
         }
 
+        &__text{
+            color: #3f3f3f;
+            font-weight: 900;
+            margin: 0;
+            padding: 0 0 20px 0;
+            font-size: 20px;
+            text-align: left;
+            
+        }
         .context{
             display: flex;
             align-items: center;
