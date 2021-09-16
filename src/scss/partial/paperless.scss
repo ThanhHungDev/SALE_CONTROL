@@ -1,0 +1,24 @@
+.homepage{
+    .paperless{
+        &__head{
+            
+            padding: 15px 30px;
+            background-color: #f2f2f2;
+            &--title{
+                color: #3f3f3f;
+                font-weight: 900;
+                margin: 0;
+                padding: 0 10px;
+                font-size: 20px;
+            }
+            &--des{
+                color: #3f3f3f;
+                font-weight: 900;
+                margin: 0;
+                padding: 0 10px 0 30px;
+                font-size: 16px;
+            }
+        }
+        
+    }
+}

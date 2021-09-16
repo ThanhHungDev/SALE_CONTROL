@@ -10,6 +10,10 @@
 
 $text__color: #2fbff3;
 
+.fadein {
+    opacity: 1!important;
+}
+
 
 .homepage{
     padding: 15px;
@@ -21,7 +25,7 @@ $text__color: #2fbff3;
 
     h4{
         &::after{
-            content: unset!important;
+            content: unset!important; 
         }
         &::before{
             content: unset!important;
@@ -48,5 +52,7 @@ $text__color: #2fbff3;
 @import "./partial/infosharing.scss";
 @import "./partial/analysis.scss"; 
 @import "./partial/attendance.scss";
+@import "./partial/efficiency.scss";
+@import "./partial/paperless.scss";
 @import "./partial/formformat.scss";
 @import "./partial/invoice.scss";
