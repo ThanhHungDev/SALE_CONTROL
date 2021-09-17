@@ -10,14 +10,27 @@
 
 $text__color: #2fbff3;
 
+.fadein {
+    opacity: 1!important;
+}
+
 
 .homepage{
     padding: 15px;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: "游ゴシック", "Yu Gothic";
     max-width: 1100px;
     margin: 0 auto;
     text-align: left;
     font-weight: bold;
+
+    h4{
+        &::after{
+            content: unset!important; 
+        }
+        &::before{
+            content: unset!important;
+        }
+    }
     
     img{
         width: 100%;
@@ -39,8 +52,12 @@ $text__color: #2fbff3;
 @import "./partial/infosharing.scss";
 @import "./partial/analysis.scss"; 
 @import "./partial/attendance.scss";
+@import "./partial/efficiency.scss";
+@import "./partial/paperless.scss";
+@import "./partial/distribute.scss";
+@import "./partial/implementation.scss";
 @import "./partial/formformat.scss";
 @import "./partial/invoice.scss";
 @import "./partial/businessefficiency.scss";
 @import "./partial/introducereport.scss";
-@import "./partial/implementation.scss";
+@import "./partial/implementation-02.scss";

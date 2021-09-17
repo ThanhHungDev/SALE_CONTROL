@@ -166,7 +166,8 @@
                     flex-direction: column;
                     .first__content{
                         .item{
-                            width: 320px;
+                            width: 100%;
+                            max-width: 320px;
                             &:last-child:after{
                                 top: unset;
                                 bottom: 0;
@@ -196,6 +197,7 @@
                         justify-content: center;
                         align-items: center;
                         .item{
+                            
                             &:after{
                                 top: unset;
                                 bottom: 0;
