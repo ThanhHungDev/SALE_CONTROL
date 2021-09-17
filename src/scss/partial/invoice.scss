@@ -49,8 +49,11 @@
                             flex-direction: row;
                             justify-content: space-between;
                             .arrow{
-                                width: 55px;
                                 margin: auto;
+                                .img-r{
+                                    width: 65px;
+                                    height: 15px;
+                                }
                             }
                         }
                         .text{
@@ -82,10 +85,14 @@
                                     margin-right: 40%;
                                 }
                                 .ar-01{
-                                    transform: rotate(-15deg);
+                                    .img-r{
+                                        transform: rotate(-15deg);
+                                    }
                                 }
                                 .ar-03{
-                                    transform: rotate(15deg);
+                                    .img-r{
+                                        transform: rotate(15deg);
+                                    }
                                 }
                                 .img{
                                     position: relative;
@@ -137,6 +144,7 @@
                     width: 100%;
                     height: auto;
                     object-fit: cover;
+                    vertical-align: unset;
                 }
             }
         }
@@ -145,6 +153,7 @@
                 .content-body{
                     .flow-chart{
                         flex-direction: column;
+                        transform: translateX(20px);
                         .col{
                             width: 100%;
                         }
@@ -161,7 +170,9 @@
                                 }
                                 .arrow{
                                     margin-top: 50px;
-                                    transform: rotate(90deg);
+                                    .img-r{
+                                        transform: rotate(90deg);
+                                    }
                                 }
                             }
                             .text{
@@ -188,18 +199,24 @@
                                     flex-direction: column;
                                     margin: 0 15px;
                                     .arrow{
-                                        margin-left: 15px;
                                         margin-right: unset;
+                                        margin-left: unset;
                                         height: 100px;
                                     }
                                     .ar-01{
-                                        transform: translateX(-50%) translateY(-10px) rotate(105deg);
+                                        .img-r{
+                                            transform: translate(20px, 45px) rotate(105deg);
+                                        }
                                     }
                                     .ar-02{
-                                        transform: translateX(-50%) rotate(90deg);
+                                        .img-r{
+                                            transform: translate(10px, 45px) rotate(90deg);
+                                        }
                                     }
                                     .ar-03{
-                                        transform: translateX(-50%) translateY(8px) rotate(75deg);
+                                        .img-r{
+                                            transform: translateY(45px) rotate(75deg);
+                                        }
                                     }
                                 }
                             }
@@ -216,55 +233,65 @@
                 padding: 40px 0;
                 .content-body{
                     .flow-chart{
+                        .col{
+                            .row-img{
+                            .arrow{
+                                .img-r{
+                                    width: 50px;
+                                }
+                            }
+                        }
+                        }
                         .col-01{
-                            height: 260px;
+                            height: 180px;
                             .row-img{
                                 flex-direction: column;
                                 .img{
-                                    width: 140px;
+                                    width: 80px;
                                     margin: auto;
-                                }
-                                .arrow{
-                                    margin-top: 50px;
-                                    transform: rotate(90deg);
                                 }
                             }
                             .text{
-                                position: absolute;
-                                bottom: 85px;
-                                left: 50%;
-                                transform: translateX(-50%);
-                                width: 100%;
-                                margin-left: unset;
-                                text-align: center;
+                                bottom: 70px;
                             }
                         }
                         .col-02{
                             .img{
-                                width: 160px;
+                                width: 100px;
                             }
                         }
                         .col-03{
                             .img-group{
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: center;
                                 .row-img{
-                                    flex-direction: column;
-                                    margin: 0 15px;
                                     .arrow{
-                                        margin-left: 15px;
-                                        margin-right: unset;
-                                        height: 100px;
+                                        height: 65px;
                                     }
                                     .ar-01{
-                                        transform: translateX(-50%) translateY(-10px) rotate(105deg);
+                                        .img-r{
+                                            transform: translate(20px, 25px) rotate(105deg);
+                                        }
                                     }
                                     .ar-02{
-                                        transform: translateX(-50%) rotate(90deg);
+                                        .img-r{
+                                            transform: translate(10px, 25px) rotate(90deg);
+                                        }
                                     }
                                     .ar-03{
-                                        transform: translateX(-50%) translateY(8px) rotate(75deg);
+                                        .img-r{
+                                            transform: translateY(25px) rotate(75deg);
+                                        }
+                                    }
+                                    .img{
+                                        width: 65px;
+                                        .inv{
+                                            top: 42%;
+                                            left: -20px;
+                                            width: 26px;
+                                        }
+                                        .building{
+                                            width: 65px;
+                                            height: 65px;
+                                        }
                                     }
                                 }
                             }
