@@ -19,9 +19,9 @@ $text__color: #2fbff3;
     text-align: left;
     font-weight: bold;
 
-    h4{
+    h4{ 
         &::after{
-            content: unset!important; 
+            content: unset!important;
         }
         &::before{
             content: unset!important;

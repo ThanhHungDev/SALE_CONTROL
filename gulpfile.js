@@ -11,13 +11,30 @@ var cache        = require('gulp-cached')
 // đầu tiên hãy tạo 1 thể hiện của browserSync
 var browserSync = require('browser-sync').create();
 
+var supported = [
+    'last 2 versions',
+    'safari >= 8',
+    'ie >= 10',
+    'ff >= 20',
+    'ios 6',
+    'android 4'
+];
+
 gulp.task('sass', function () {
     return gulp.src('src/scss/**.scss')
+        // .pipe(sass())
+        // .pipe(autoprefixer({
+        //     overrideBrowserslist: [
+        //         ">0.2%",
+        //         "not dead",
+        //         "not op_mini all"
+        //     ]
+        // }))
+        // .pipe(cssnano())
         .pipe(sass())
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['> 1%']
+        .pipe(cssnano({
+            autoprefixer: {browsers: supported, add: true}
         }))
-        .pipe(cssnano())
         .pipe(gulp.dest(path.join(__dirname, 'dist/css'))) /// tạo mới folder
         .pipe(browserSync.stream({ match: '**/*.css' })) /// xem stream nó khác reload như nào nhé!!!
 });
